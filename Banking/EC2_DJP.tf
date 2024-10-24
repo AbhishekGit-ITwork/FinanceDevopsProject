@@ -1,4 +1,4 @@
-  resource "aws_instance" "Banking_Project_DJP_Instance" {
+resource "aws_instance" "Banking_Project_DJP_Instance" {
   count         = 2
   ami           = "ami-0dee22c13ea7a9a67"  # Replace with the latest Ubuntu 24.04 AMI ID
   instance_type = "t2.medium"
