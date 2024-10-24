@@ -35,8 +35,8 @@ resource "aws_instance" "Banking_Project_DJP_Instance" {
 
 
     # Variables
-    USERNAME="devops"
-    PASSWORD="devops"
+    USERNAME="abhishek"
+    PASSWORD="abhishek"
 
     # Create the user
     useradd -m -s /bin/bash "$USERNAME"
@@ -54,8 +54,8 @@ resource "aws_instance" "Banking_Project_DJP_Instance" {
     # Inform the user
     echo "User $USERNAME created with passwordless sudo access."
 
-    # Switch to 'devops' user
-    sudo -i -u devops bash << 'EOL'
+    # Switch to 'abhishek' user
+    sudo -i -u abhishek bash << 'EOL'
     # Generate SSH keys (no passphrase)
     ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ""
     cd ~/.ssh/
