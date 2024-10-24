@@ -68,5 +68,5 @@ resource "aws_instance" "Banking_Project_DJP_Instance" {
 
     EOF
 
-  key_name = "terraform"
+  key_name = "Mumbai"
 }
